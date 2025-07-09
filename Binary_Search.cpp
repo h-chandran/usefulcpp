@@ -21,10 +21,10 @@ int main(){
     int low = 0, high = n-1;
     int mid = (low + high) / 2;
     while(low <= high){
-        if( val == mid){
+        if( val == v[mid]){
             found = true;
             break;
-        } else if(val > mid){
+        } else if(val > v[mid]){
             low = mid+1;
             mid = (low + high) / 2;
         } else{
